@@ -1,0 +1,7 @@
+.btn.btn-primary{
+    background-color: aquamarine;
+    border-color: aquamarine;
+}
+.container-small{
+    max-width: 600px;
+}
