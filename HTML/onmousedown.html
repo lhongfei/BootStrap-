@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"  onmousedown="whichButton(event)">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>点击HTML弹出鼠标键位</title>
+</head>
+<body>
+    <p>请点击鼠标，我会告诉你点了哪一个键</p>
+</body>
+
+<script>
+function whichButton(event){
+    var btnNum = event.button;
+    if(btnNum ==2){
+        alert('你点击了鼠标右键')
+    }
+    else if(btnNum == 0){
+        alert('你点击了鼠标左键')
+    }
+    else if(btnNum == 1){
+        alert('你点击了鼠标中键')
+    }
+    else{
+        alert('你点击了'+btnNum+"号键，我不能确定名称");
+    }
+}
+</script>
+</html>
