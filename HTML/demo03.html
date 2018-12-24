@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单</title>
+</head>
+<body>
+    <form>
+        你喜欢下面哪种动物？
+        <br>
+        猫<input type="checkbox">
+        狗<input type="checkbox">
+        鸟<input type="checkbox">
+        单选效果
+        <br>
+        选择你的班级？
+        <br>
+        一班<input type="radio" name="sex" id="a">
+        二班<input type="radio" name="sex" id="b">
+        <br>
+        <select name="" id="">
+        <option >pinyin</option>
+        <option >中文</option>
+        <option >English</option>
+        </select>
+    </form>
+    <br>
+    输入<input type="text" spellcheck="true">
+
+    <article>
+        <h1>内嵌页面</h1>
+        <object data="" type="">
+            <embed src="#" type="" width="400px" height="500px">
+        </object>
+    </article>
+
+    <script>
+    var a = document.getElementById("a"),
+    b = document.getElementById("b");
+    a.onclick = function(){
+        alert("一班的啊，交十元")
+    };
+    b.onclick = function(){
+        alert("进去吧")
+    }
+    </script>
+</body>
+</html>

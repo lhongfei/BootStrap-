@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action是指接受表单请求的URL -->
+    <form action="" id="myForm">
+        输入：<input type="password" value="输入一些数字">
+    </form>
+
+    <script>
+    var form = document.getElementById('myForm');
+    var field = form.elements[0];
+    field.value = '其他数组';//修改value属性
+    //检查form属性的值
+    alert(field.form === form);//true
+    //把焦点设置到当前字段
+    field.focus();
+    //禁用当前字段
+    field.disabled = true;
+    </script>
+</body>
+</html>

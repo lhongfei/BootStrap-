@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #btn{
+display: block;
+width: 100px;
+height: 40px;
+background-color: lightcoral;
+text-align: center;
+line-height:40px;
+position: relative;
+color: #FFF;
+font-size: 2em;
+margin: 0 auto;
+}
+#btn::after{
+content: "";
+width: 30px;
+height: 30px;
+border-radius: 30px;
+background: #fff;
+position: absolute;
+display: block;
+left: 85px;
+top: 5px;
+}
+    
+    </style>
+</head>
+<body>
+    <button id="btn">按钮</button>
+</body>
+</html>
